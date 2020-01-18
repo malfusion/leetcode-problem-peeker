@@ -1,10 +1,27 @@
 {
   "name": "Leetcode Problem Peeker",
-  "version": "0.1",
-  "description": "A quick peek into a Leetcode question when you hover over a link that leads to a problem on Leetcode",
+  "version": "1.0",
+  "description": "A quick peek into a Leetcode question when you hover over a link that leads to a problem on Leetcode.",
   "manifest_version": 2,
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
+  "content_scripts":[
+		{
+		  "matches": [
+		  	"https://leetcode.com/*"
+		  ],
+		  "css": [
+        "css/jquery.qtip.min.css",
+        "css/style.css"
+		  ],
+		  "js": [
+        "js/jquery-3.4.1.min.js",
+        "js/jquery.qtip.min.js",
+		  	"js/script.js"
+		  ],
+		  "run_at": "document_idle"
+		}
+	]
 }

@@ -1,0 +1,17 @@
+.qtip {
+    max-width:600px !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.question-popup{
+    font-size: 14px;
+    line-height: 18px;
+    color: #263238;
+    padding: 10px 40px 10px 20px;
+    width: 600px;
+    height: 400px;
+    overflow-y: scroll;
+}
+.question-popup .title {
+    color: #142749;
+}
